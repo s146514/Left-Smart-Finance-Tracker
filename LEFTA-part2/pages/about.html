@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – Lefta</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    .team-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s;
+    }
+    .team-card:hover { transform: translateY(-4px); }
+    .team-avatar {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+      font-size: 1.8rem;
+      font-family: var(--font-heading);
+      font-weight: bold;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .team-card h3 { margin-bottom: 0.2rem; }
+    .team-card .role { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
+    .value-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .value-box .v-icon { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
+    .value-box h3 { margin-bottom: 0.4rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png" alt="Lefta Logo" class="logo-img"/>
+        <div><span class="logo-text">LEFT<span>A</span></span><span class="logo-tagline">Finance Tracker</span></div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="budget.html">Budget</a></li>
+          <li><a href="expenses.html">Expenses</a></li>
+          <li><a href="savings.html">Savings</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-hero" style="display:flex;align-items:center;gap:2rem;">
+      <img src="../images/logo.png" alt="Lefta" class="logo-graphic" style="flex-shrink:0;"/>
+      <div>
+        <h1>About Us</h1>
+        <p>Meet the passionate team behind Lefta — building smarter tools for your financial future.</p>
+      </div>
+    </div>
+
+    <!-- About Lefta -->
+    <div class="card">
+      <h2>About Lefta</h2>
+      <div class="grid-2">
+        <div>
+          <p>Lefta is a personal finance management platform built to help individuals take full control of their money — whether you're tracking daily expenses, planning a monthly budget, or working toward a savings goal.</p>
+          <p>We believe managing money shouldn't be complicated. That's why we built Lefta to be clean, intuitive, and accessible to everyone.</p>
+          <h3>Our Mission</h3>
+          <p>To empower every individual with simple, powerful tools that turn financial stress into financial confidence.</p>
+          <div class="alert alert-info" style="margin-top:1rem;">
+            <strong>📧 Get in Touch:</strong><br/>
+            Email us at: <a href="mailto:hello@lefta.app" style="color:var(--primary);font-weight:bold;">hello@lefta.app</a>
+          </div>
+        </div>
+        <div>
+          <h3>What Makes Us Different</h3>
+          <ul class="check-list styled">
+            <li>100% free — no subscriptions, no ads</li>
+            <li>Fully responsive — works on any device</li>
+            <li>Budget planner, expense tracker &amp; savings goals</li>
+            <li>Built-in loan &amp; savings calculator</li>
+            <li>Expert financial tips curated for real life</li>
+            <li>Simple enough for beginners, powerful enough for everyone</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Values -->
+    <div class="card">
+      <h2>Our Values</h2>
+      <div class="grid-3">
+        <div class="value-box">
+          <span class="v-icon">🔒</span>
+          <h3>Privacy First</h3>
+          <p>Your financial data belongs to you. We never sell or share your information with third parties.</p>
+        </div>
+        <div class="value-box">
+          <span class="v-icon">✨</span>
+          <h3>Simplicity</h3>
+          <p>Every feature is designed to be straightforward. No overwhelming charts, no confusing jargon.</p>
+        </div>
+        <div class="value-box">
+          <span class="v-icon">🚀</span>
+          <h3>Empowerment</h3>
+          <p>We give you the tools and knowledge to make better financial decisions every single day.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Members -->
+    <div class="card">
+      <h2>Meet the Team</h2>
+      <div class="grid-2" style="margin-bottom:0;">
+        <div class="team-card">
+          <div class="team-avatar">AK</div>
+          <h3>Alkhalil Ahmed Alkharousi</h3>
+          <p class="role">Product Lead &amp; Frontend Developer</p>
+          <p style="color:var(--text-light);font-size:0.8rem;letter-spacing:1px;margin-bottom:0.5rem;">ID: 146514</p>
+          <p style="margin-top:0.5rem;font-size:0.9rem;">Leads product vision and frontend architecture. Passionate about clean UI and making finance accessible to everyone.</p>
+          <p style="margin-top:0.7rem;"><a href="mailto:alkhalil@lefta.app">📧 alkhalil@lefta.app</a></p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">MS</div>
+          <h3>Mohammed Rashid Al-Shukaili</h3>
+          <p class="role">UI/UX Designer &amp; Content Strategist</p>
+          <p style="color:var(--text-light);font-size:0.8rem;letter-spacing:1px;margin-bottom:0.5rem;">ID: 146078</p>
+          <p style="margin-top:0.5rem;font-size:0.9rem;">Crafts the visual experience and content strategy. Ensures every page feels welcoming, clear, and on-brand.</p>
+          <p style="margin-top:0.7rem;"><a href="mailto:mohammed@lefta.app">📧 mohammed@lefta.app</a></p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">AD</div>
+          <h3>Abdulrhman Khalfan Al-Degheshi</h3>
+          <p class="role">Full-Stack Developer</p>
+          <p style="color:var(--text-light);font-size:0.8rem;letter-spacing:1px;margin-bottom:0.5rem;">ID: 143052</p>
+          <p style="margin-top:0.5rem;font-size:0.9rem;">Builds the core features and data flows. Focused on performance, accessibility, and a seamless user experience.</p>
+          <p style="margin-top:0.7rem;"><a href="mailto:abdulrhman@lefta.app">📧 abdulrhman@lefta.app</a></p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">AM</div>
+          <h3>Amjed Abdullah Almosulhi</h3>
+          <p class="role">Finance Specialist &amp; QA Lead</p>
+          <p style="color:var(--text-light);font-size:0.8rem;letter-spacing:1px;margin-bottom:0.5rem;">ID: 146076</p>
+          <p style="margin-top:0.5rem;font-size:0.9rem;">Brings real-world financial expertise to the platform. Leads quality assurance to ensure every tool is accurate and reliable.</p>
+          <p style="margin-top:0.7rem;"><a href="mailto:amjed@lefta.app">📧 amjed@lefta.app</a></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.5rem;">
+          <img src="../images/logo.png" alt="Lefta" class="logo-graphic-sm"/>
+          <span class="logo-text">LEFT<span style="color:var(--accent)">A</span></span>
+        </div>
+        <p style="font-size:0.88rem;margin-top:0.3rem;">Your personal finance companion.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="budget.html">Budget</a></li>
+          <li><a href="expenses.html">Expenses</a></li>
+          <li><a href="savings.html">Savings</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p style="margin-top:1rem;font-size:0.85rem;">📧 <a href="mailto:hello@lefta.app" style="color:var(--accent);">hello@lefta.app</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lefta. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>function toggleNav(){document.getElementById('nav-menu').classList.toggle('open');}</script>
+</body>
+</html>
